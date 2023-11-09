@@ -1,38 +1,66 @@
-.App {
+.canvas {
+  position: "relative";
+  height: 575px;
+  width: 550px;
+}
+
+.Appmain  {
+  background-color : #000000;
+  height : 100vh;
+  width : 100vw;
+}
+
+.buttons  {
+  position: absolute;
+  left: 700;
+  top: 100;
+}
+
+/* Credit to W3Schools for this button design
+https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3
+*/
+.arrow_button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
   text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #692064;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.arrow_button:hover {background-color: #74206B}
+
+.arrow_button:active {
+  background-color: #74206B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.reset_button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.reset_button:hover {background-color: #c11818}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset_button:active {
+  background-color: #c11818;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
