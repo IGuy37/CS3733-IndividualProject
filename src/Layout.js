@@ -1,8 +1,9 @@
 export const layout = {
     canvas : {
-        position: "absolute",
-        height: "575",
-        width: "500",
+        position: "relative",
+        height: "600",
+        width: "600",
+        top : "100",
     },
 
     Appmain : {
@@ -43,11 +44,41 @@ export const layout = {
         top: 450
     },
 
+    configSelectButtons : {
+        position: "absolute",
+        left: 920,
+        top: 110
+    },
+
+    configSelect : {
+        position: "absolute",
+        left: 900,
+        top: 10,
+        color: "white",
+        backgroundColor: "black",
+        fontSize: 36
+    },
+
+    removeButton : {
+        position: "absolute",
+        left: 690,
+        top: 250
+    },
+
     resetButton : {
         position: "absolute",
         left: 690,
         top: 50
     },
+
+    congratulationsMessage : {
+        position: "absolute",
+        left: 90,
+        top: 600,
+        color: "white",
+        backgroundColor: "black",
+        fontSize: 36
+    }
 
          
 };
